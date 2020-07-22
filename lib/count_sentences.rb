@@ -15,6 +15,6 @@ end
   end
 
   def count_sentences
-    self.split(/[.!?]/).reject 
+    self.split(/[.!?]/).reject {|x| x.empty?}.size
   end
 end 
